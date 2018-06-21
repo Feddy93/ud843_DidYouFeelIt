@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
      * Update the UI with the given earthquake information.
      */
     private void updateUi(Event earthquake) {
-        TextView titleTextView = (TextView) findViewById(R.id.title);
+        TextView titleTextView = findViewById(R.id.title);
         titleTextView.setText(earthquake.title);
 
-        TextView tsunamiTextView = (TextView) findViewById(R.id.number_of_people);
+        TextView tsunamiTextView = findViewById(R.id.number_of_people);
         tsunamiTextView.setText(getString(R.string.num_people_felt_it, earthquake.numOfPeople));
 
-        TextView magnitudeTextView = (TextView) findViewById(R.id.perceived_magnitude);
+        TextView magnitudeTextView = findViewById(R.id.perceived_magnitude);
         magnitudeTextView.setText(earthquake.perceivedStrength);
     }
 }
